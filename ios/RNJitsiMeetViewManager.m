@@ -51,6 +51,9 @@ RCT_EXPORT_METHOD(call:(NSString *)urlString userInfo:(NSDictionary *)userInfo)
             [builder setFeatureFlag:@"meeting-name.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"meeting-password.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"invite.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"raise-hand.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"toolbox.alwaysVisible" withBoolean:YES];
+            [builder setFeatureFlag:@"video-share.enabled" withBoolean:NO];
         }];
         [jitsiMeetView join:options];
     });
