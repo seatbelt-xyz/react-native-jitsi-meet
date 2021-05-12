@@ -1,4 +1,4 @@
-#import <JitsiMeet/JitsiMeet.h>
+#import <JitsiMeetSDK>
 
 #import <React/RCTComponent.h>
 
