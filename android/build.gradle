@@ -37,7 +37,7 @@ android {
 
 repositories {
   maven {
-      url "https://github.com/seatbelt-xyz/jitsi-maven-repository/tree/seatbelt-android-sdk-3.5.1/releases"
+      url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
   }
   google()
   mavenCentral()
@@ -46,6 +46,12 @@ repositories {
 
 dependencies {
     implementation ('org.jitsi.react:jitsi-meet-sdk:3.5.0') {
+      exclude group: 'com.facebook.react',module:'react-native-community_netinfo'
+      exclude group: 'com.facebook.react',module:'react-native-svg'
+      exclude group: 'com.facebook.react',module:'react-native-community-async-storage'
+      exclude group: 'com.facebook.react',module:'@react-native-community/netinfo'
+      exclude group: 'com.facebook.react',module:'@react-native-community/async-storage'
+      exclude group: 'com.facebook.react',module:'react-native-splash-screen'
       transitive = true
     }
 }
