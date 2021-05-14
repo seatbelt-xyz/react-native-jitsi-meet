@@ -37,7 +37,7 @@ android {
 
 repositories {
   maven {
-      url "https://github.com/seatbelt-xyz/jitsi-maven-repository/releases/tag/seatbelt-android-sdk-3.5.0"
+      url "https://github.com/seatbelt-xyz/jitsi-maven-repository/tree/seatbelt-android-sdk-3.5.0/releases"
   }
   google()
   mavenCentral()
